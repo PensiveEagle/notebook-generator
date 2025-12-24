@@ -26,7 +26,7 @@ for index, row in df.iterrows():
     pdf.cell( w = 0, h = 0,
              ln = 1, border = 1 )
     
-    for x in range( 1, row["Pages"] ):
+    for x in range( row["Pages"] - 1 ):
         pdf.add_page()
 
 
